@@ -17,7 +17,7 @@ class Stack:
     
     def top(self):
         """Returns the value of the top item in the stack without removing."""
-        return self.items[len(self.items)-1]
+        return self.items[-1]
 
 
     def push(self, item):
