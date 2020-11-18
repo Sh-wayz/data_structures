@@ -1,0 +1,15 @@
+import queue
+
+line = queue.Queue()
+print('Queue created')
+print('Adding items...')
+line.enqueue('Bobby joe')
+line.enqueue('Joey bob')
+line.enqueue('Bobby bob')
+line.enqueue('Joey joe')
+print(f'{line.size()} items added.')
+print(f'The first item in the queue is {line.peek()}')
+print(f'Now removing {line.dequeue()} from the queue.')
+print(f'There are now {line.size()} items in the queue.')
+print(f'Is the queue empty?(Should be False): {line.is_empty()}')
+print(f'The new first item in the queue is {line.peek()}')
