@@ -11,7 +11,7 @@ class EnhancedList(list):
 
     def __init__(self):
         super().__init__()
-
+        
     def append(self, item):
         """Appends and returns item."""
 
@@ -33,8 +33,4 @@ class EnhancedList(list):
     def copy(self):
        """Returns a deep copy of the list"""
        return deepcopy(self)
-
-
-    def indexes(self, value):
-        """.indices() but for dumb people."""
-        return self.indices(value)
+    indexes = indices
